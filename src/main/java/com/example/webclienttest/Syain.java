@@ -1,20 +1,23 @@
 package com.example.webclienttest;
 
+import jakarta.validation.constraints.Size;
+
 import java.io.Serializable;
 
 public class Syain implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    private String bangou;
+    //    private String bangou;
+    @Size(min = 4)
     private String name;
 
-    public String getBangou() {
-        return bangou;
-    }
+//    public String getBangou() {
+//        return bangou;
+//    }
 
-    public void setBangou(String bangou) {
-        this.bangou = bangou;
-    }
+//    public void setBangou(String bangou) {
+//        this.bangou = bangou;
+//    }
 
     public String getName() {
         return name;
